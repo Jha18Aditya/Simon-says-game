@@ -4,16 +4,15 @@ body {
     background: #f0f0f0;
     min-height: 100vh;
     margin: 0;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    padding: 0.5rem;
+    display: grid;
+    place-items: center;
+    overflow-x: hidden;
 }
 
 main {
-    width: min(80vw, 36rem);
-    aspect-ratio: 1;
+    width: min(90vw, 35rem);
+    min-height: min(85vh, 40rem);
     background: rgba(18, 18, 18, 0.5);
     padding: clamp(1rem, 3vw, 2rem);
     border-radius: clamp(10px, 2vw, 20px);
@@ -21,12 +20,13 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    gap: 0.5rem;
+    margin: 1rem 0;
 }
 
 .start-btn {
-    padding: 12px 30px;
-    font-size: 1.2rem;
+    padding: clamp(8px, 1.5vw, 12px) clamp(20px, 3vw, 35px);
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -37,12 +37,14 @@ main {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+    white-space: nowrap;
+    min-width: min-content;
 }
 
 .start-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.6);
     background-color: #45a049;
 }
 
@@ -50,43 +52,72 @@ main {
     transform: translateY(1px);
 }
 
+/* Game Over State Styles */
+.game-over h2 {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    margin: 0.5rem auto;
+}
+
+.game-over .start-btn {
+    background-color: #ff4444;
+    box-shadow: 0 4px 15px rgba(255, 68, 68, 0.4);
+}
+
+.game-over .start-btn:hover {
+    background-color: #ff3333;
+    box-shadow: 0 6px 20px rgba(255, 68, 68, 0.6);
+}
+
 
 
 h1 {
     color: #ffffff;
-    font-size: clamp(1.5rem, 5vw, 2.5rem);
-    margin-bottom: clamp(0.5rem, 2vw, 1rem);
+    font-size: clamp(1.2rem, 4vw, 2rem);
+    margin: 0;
+    padding: clamp(0.3rem, 1vw, 0.8rem);
     text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 
 h2 {
     color: #fffdfd;
-    font-size: clamp(1rem, 3vw, 1.5rem);
-    margin-bottom: clamp(1rem, 4vw, 2rem);
+    font-size: clamp(0.9rem, 2.5vw, 1.3rem);
+    margin: 0;
+    padding: clamp(0.3rem, 1vw, 0.8rem);
     line-height: 1.4;
+    max-width: 90%;
+}
+
+.hscore {
+    color: #ffd700;
+    font-size: clamp(1rem, 2.8vw, 1.4rem);
+    padding-top: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    font-weight: bold;
 }
 
 .buttoncnt {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: clamp(0.5rem, 2vw, 1.5rem);
+    gap: clamp(0.5rem, 2vw, 1rem);
     width: 100%;
-    flex: 1;
-    padding: clamp(0.5rem, 2vw, 1.5rem);
+    max-width: 500px;
+    padding: clamp(0.5rem, 2vw, 1rem);
+    margin: auto 0;
 }
 
 .divp1, .divp2 {
     display: flex;
     justify-content: center;
-    gap: clamp(0.5rem, 2vw, 1.5rem);
+    gap: clamp(0.5rem, 2vw, 1rem);
 }
 
 .btns {
-    width: min(40%, 180px);
+    width: min(40%, 130px);
     aspect-ratio: 1;
     border-radius: 20%;
-    border: clamp(3px, 1vw, 9px) solid rgba(0,0,0,0.2);
+    border: clamp(2px, 0.8vw, 5px) solid rgba(0,0,0,0.2);
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
@@ -138,10 +169,13 @@ h2 {
     40%, 80% { transform: translateX(10px); background: #ff4444; }
 }
 
+
 @media (max-height: 600px) {
     body {
         padding: 0.5rem;
     }
+    
+
     
     main {
         width: min(90vh, 37rem);
