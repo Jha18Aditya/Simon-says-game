@@ -1,52 +1,47 @@
-🧠 Simon Says Game
-A fast-paced memory challenge where players must repeat increasingly complex color patterns—just like the classic Simon Says! Built using HTML, CSS, and JavaScript, this game is a fun demonstration of interactive UI logic and user engagement.
+# Simon Says Game
 
-🚀 Features
-Dynamic sequence generation with randomized colors
+Test your memory and reflexes with this web-based Simon Says game! Mimic increasingly complex color sequences to level up. This lightweight and responsive game is perfect for any device.
 
-Real-time user input tracking and pattern validation
+## Features
 
-Responsive layout for desktop and mobile screens
+*   Randomized color sequences per level
+*   Real-time input validation
+*   Visual and audio feedback
+*   Level tracking with reset on failure
+*   Mobile-friendly design
 
-Visual and audio feedback for correct and wrong inputs
+## How to Play
 
-Level tracking and game reset mechanics
+1.  Press any key to start.
+2.  Memorize the flashing color sequence.
+3.  Replicate the sequence by clicking the buttons.
+4.  Advance to the next level by completing the sequence correctly.
+5.  Avoid mistakes—one wrong move resets the game!
 
-🎮 How to Play
-Press any key to start the game.
+## Technologies
 
-Watch the color flash and listen to the sound.
+| Tech         | Role                                     |
+|--------------|------------------------------------------|
+| **HTML5**    | Game element structure                   |
+| **CSS3**     | Styling, layout, and responsive design   |
+| **JavaScript** | Core game logic: sequence, input handling |
 
-Repeat the pattern in the correct order.
+## Project Structure
 
-Each level adds one more color to the sequence.
+```plaintext
+Simon-Says-Game/
+├── index.html
+├── styles.css
+├── game.js
+└── assets/       # (Optional) sounds/images
+```
 
-A mistake resets the game—try to beat your high score!
+**Highlights:** Intuitive game loop, sound integration using `Audio()` objects, scalable code, and fully client-side implementation.
 
-🛠️ Tech Stack
-Front-End	Description
-HTML	Markup structure of game elements
-CSS	Styling for colors, layout, effects
-JavaScript	Core game logic and interactivity
-📁 Folder Structure
-plaintext
-📦 Simon-Says-Game/
- ┣ 📜 index.html
- ┣ 📜 styles.css
- ┣ 📜 game.js
- ┗ 📁 assets/ (optional for sounds/images)
-✨ Highlights
-Intuitive game loop and event handling
+## Preview
 
-Sound integration using Audio() objects
+![Simon Says Game Preview](https://github.com/user-attachments/assets/a58913b0-aec0-4b12-be16-f21e2cfcc8dd)
 
-Scalable code structure for feature expansion
+## License
 
-Fully client-side implementation—no backend required
-
-📸 Preview
-<img width="1768" height="856" alt="image" src="https://github.com/user-attachments/assets/a58913b0-aec0-4b12-be16-f21e2cfcc8dd" />
-
-
-📄 License
-This project is open-source and available under the MIT License.
+MIT License.
