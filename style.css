@@ -178,8 +178,8 @@ h2 {
 
     
     main {
-        width: min(90vh, 36rem);
-        margin:5px;
+        width: min(85vh, 35rem);
+        margin:20px;
     }
     
     h1 {
