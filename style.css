@@ -262,14 +262,14 @@ h2 {
 @media (max-height: 600px) {
   main {
     height: auto;
-    max-height: 78vh;
-    width: min(95vw, 35rem);
+    max-height: 85vh;
+    width: min(80vw, 35rem);
     padding: 1rem;
   }
 
   .btns {
-    width: min(38vw, 120px);
-    height: min(38vw, 120px);
+    width: min(35vw, 120px);
+    height: min(35vw, 120px);
   }
 
   h1 {
