@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Simon says Game</h1>
+      <h2>Press any key to start the game</h2>
+      <div class="buttoncnt">
+        <div class="divp1">
+          <div class="btns btn1 green" id="green" type="button"></div>
+          <div class="btns btn2 orange" id="orange" type="button"></div>
+        </div>
+        <div class="divp2">
+          <div class="btns btn3 skyblue" id="skyblue" type="button"></div>
+          <div class="btns btn4 pink" id="pink" type="button"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Audio Elements -->
+    <audio id="bgMusic" loop>
+        <source src="audio/watery-graves-181198.mp3" type="audio/mp3">
+    </audio>
+    <audio id="gameOverSound">
+        <source src="audio/game-over-arcade-6435.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
