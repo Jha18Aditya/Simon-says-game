@@ -166,7 +166,7 @@ h2 {
 
 @media (max-width: 480px) {
   main {
-    width: 90vw;
+    width: 80vw;
     height: auto;
     padding: 1rem;
     box-sizing: border-box;
@@ -198,7 +198,7 @@ h2 {
 
 @media (min-width: 481px) and (max-width: 767px) {
   main {
-    width: 95vw;
+    width: 80vw;
     height: auto;
     padding: 1.25rem;
   }
@@ -216,7 +216,7 @@ h2 {
 
 @media (min-width: 768px) and (max-width: 1023px) {
   main {
-    width: 90vw;
+    width: 80vw;
     height: 90vh;
   }
 
@@ -262,7 +262,7 @@ h2 {
 @media (max-height: 600px) {
   main {
     height: auto;
-    max-height: 85vh;
+    max-height: 78vh;
     width: min(95vw, 35rem);
     padding: 1rem;
   }
