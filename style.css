@@ -24,6 +24,32 @@ main {
     justify-content: space-between;
 }
 
+.start-btn {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 0.5rem 0;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.start-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    background-color: #45a049;
+}
+
+.start-btn:active {
+    transform: translateY(1px);
+}
+
 
 
 h1 {
@@ -112,7 +138,6 @@ h2 {
     40%, 80% { transform: translateX(10px); background: #ff4444; }
 }
 
-/* Small height screens */
 @media (max-height: 600px) {
     body {
         padding: 0.5rem;
@@ -133,7 +158,7 @@ h2 {
     }
 }
 
-/* Portrait phones */
+
 @media (max-width: 380px) {
     .btns {
         width: min(45%, 150px);
