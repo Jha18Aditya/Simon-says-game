@@ -1,3 +1,4 @@
+/* Your Original Styles (unchanged) */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -164,10 +165,11 @@ h2 {
   box-shadow: 0 6px 20px rgba(255, 68, 68, 0.6);
 }
 
+
 @media (max-width: 480px) {
   main {
-    width: 80vw;
-    height: auto;
+    width: 90vw;
+    height: 80vh;
     padding: 1rem;
     box-sizing: border-box;
   }
@@ -178,8 +180,8 @@ h2 {
   }
 
   .btns {
-    width: 35vw;
-    height: 35vw;
+    width: 90px;
+    height: 90px;
   }
 
   h1 {
@@ -196,10 +198,28 @@ h2 {
   }
 }
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (max-width: 600px) and (min-width: 481px) {
   main {
-    width: 80vw;
-    height: auto;
+    width: 92vw;
+    height: 80vh;
+    padding: 1rem;
+  }
+
+  .btns {
+    width: 100px;
+    height: 100px;
+  }
+
+  .start-btn {
+    font-size: 1.05rem;
+    padding: 1rem 1.75rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 767px) {
+  main {
+    width: 85vw;
+    height: 80vh;
     padding: 1.25rem;
   }
 
@@ -209,15 +229,24 @@ h2 {
   }
 
   .start-btn {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     padding: 1rem 2rem;
   }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
 }
+
 
 @media (min-width: 768px) and (max-width: 1023px) {
   main {
     width: 80vw;
-    height: 90vh;
+    height: 80vh;
   }
 
   .btns {
@@ -226,7 +255,7 @@ h2 {
   }
 
   .start-btn {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     padding: 1rem 2rem;
   }
 
@@ -241,8 +270,8 @@ h2 {
 
 @media (min-width: 1024px) {
   .btns {
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
   }
 
   .start-btn {
@@ -261,19 +290,19 @@ h2 {
 
 @media (max-height: 600px) {
   main {
-    height: auto;
+    height: 80vh;
     max-height: 85vh;
     width: min(80vw, 35rem);
     padding: 1rem;
   }
 
   .btns {
-    width: min(35vw, 120px);
-    height: min(35vw, 120px);
+    width: 100px;
+    height: 100px;
   }
 
   h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   h2 {
