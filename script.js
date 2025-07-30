@@ -5,19 +5,24 @@ let btns = ["green", "orange", "skyblue", "pink"];
 let started = false;
 let level = 0;
 let highestscore = 0;
-let score=0;
+let score = 0;
 let h2 = document.querySelector("h2");
-h2.innerText = "Ready? Tap any key to begin your color quest...";
+let startBtn = document.querySelector(".start-btn");
 
-
-
-document.addEventListener("keypress", () => {
+function startGame() {
     if (!started) {
         started = true;
         document.getElementById('bgMusic').play();
+        startBtn.style.display = "none";
         levelup();
     }
-});
+}
+
+// Start game on button click
+startBtn.addEventListener("click", startGame);
+
+// Also allow starting with keypress
+document.addEventListener("keypress", startGame);
 
 
 function gameflash(btn) {
@@ -69,6 +74,10 @@ function finalresult(idx) {
         document.getElementById('bgMusic').pause();
         document.getElementById('bgMusic').currentTime = 0;
         document.getElementById('gameOverSound').play();
+        
+        // Show and update restart button
+        startBtn.textContent = "Restart Game";
+        startBtn.style.display = "block";
         
         setTimeout(() => {
             document.body.style.backgroundColor = "white";
